@@ -11,6 +11,7 @@ import { MoviePageComponent } from './pages/movie-page/movie-page.component';
 import { EditMoviePageComponent } from './pages/edit-movie-page/edit-movie-page.component';
 import { DeleteMoviePageComponent } from './pages/delete-movie-page/delete-movie-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MovieComponent } from './components/movie/movie.component';
 
 const routes: Route[] = [
   {
@@ -48,7 +49,8 @@ const routes: Route[] = [
     MoviePageComponent,
     EditMoviePageComponent,
     DeleteMoviePageComponent,
-    NavbarComponent
+    NavbarComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
