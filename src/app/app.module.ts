@@ -5,11 +5,11 @@ import { HttpClientModule } from "@angular/common/http";
 import { RouterModule, Route } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { MoviesComponent } from './pages/movies/movies.component';
-import { AddMovieComponent } from './pages/add-movie/add-movie.component';
-import { MovieComponent } from './pages/movie/movie.component';
-import { EditMovieComponent } from './pages/edit-movie/edit-movie.component';
-import { DeleteMovieComponent } from './pages/delete-movie/delete-movie.component';
+import { MoviesPageComponent } from './pages/movies-page/movies-page.component';
+import { AddMoviePageComponent } from './pages/add-movie-page/add-movie-page.component';
+import { MoviePageComponent } from './pages/movie-page/movie-page.component';
+import { EditMoviePageComponent } from './pages/edit-movie-page/edit-movie-page.component';
+import { DeleteMoviePageComponent } from './pages/delete-movie-page/delete-movie-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 const routes: Route[] = [
@@ -18,23 +18,23 @@ const routes: Route[] = [
     children: [
       {
         path: "",
-        component: MoviesComponent
+        component: MoviesPageComponent
       },
       {
         path: "add",
-        component: AddMovieComponent
+        component: AddMoviePageComponent
       },
       {
         path: ":id",
-        component: MovieComponent
+        component: MoviePageComponent
       },
       {
         path: ":id/edit",
-        component: EditMovieComponent
+        component: EditMoviePageComponent
       },
       {
         path: ":id/delete",
-        component: DeleteMovieComponent
+        component: DeleteMoviePageComponent
       }
     ]
   },
@@ -43,11 +43,11 @@ const routes: Route[] = [
 @NgModule({
   declarations: [
     AppComponent,
-    MoviesComponent,
-    AddMovieComponent,
-    MovieComponent,
-    EditMovieComponent,
-    DeleteMovieComponent,
+    MoviesPageComponent,
+    AddMoviePageComponent,
+    MoviePageComponent,
+    EditMoviePageComponent,
+    DeleteMoviePageComponent,
     NavbarComponent
   ],
   imports: [
